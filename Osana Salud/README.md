@@ -1,4 +1,4 @@
-# Prueba Técnica - Programador Back-end
+# Osana Salud
 
 El presente documento define un ejercicio práctico y las condiciones de evaluación para los postulantes a **_programador Back-end_** de **Osana Salud**.
 
