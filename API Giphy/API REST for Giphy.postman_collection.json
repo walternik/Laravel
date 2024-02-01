@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "51c882c2-5b68-40e9-baf7-700645a7fc53",
+		"name": "API REST for Giphy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32698115"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Walter Melnik",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "walter.melnik@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "walter.melnik@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Gifs",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWFlYWQ1Y2NkOWZjMDY0MmE0OGRiMzJmNzEwYmQzNjI4ZGIwZjgyOGUzOTQ3NTljNTBkZWY1NWJjMDQ5ZDY4MDJhMzExYzhjZmExMWE4NjgiLCJpYXQiOjE3MDY4MTAyNjguMjg0ODIxLCJuYmYiOjE3MDY4MTAyNjguMjg0ODI3LCJleHAiOjE3MDY4MTIwNjguMjY4OTgzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.rTg3WU9QMOMlZq-mwNUJZNR3KdUCttCifodRbzGNC4lzDIv1eRHvUWr4PNSvKNP4HTXpzAet5fZ-WuGLYQOtG7P22dUo3Pto5re-4DpzCZxxyAOekHrhGnobYWOULHqgvKzqnQD42KRGM_rZHbCA43RZ0Johq6Jih-lroJtOnL5ggWj3vCYSFf3xVfkw-iJ_DkBdO-iMJFQ8DMOL85xiRi0eg1roFDUXc13cGMpMbvmvbxYfgIYv-SrPVSdsuV3H2JaM5lX1CsoH6e4uxGoJHPOqF4SvBecAuLKFnkmoBxELTlFMwAmXSIJEYdihfTYR_uVSF90Cx7ups1MTkRBszay-VkHvymdCuhAlxV_PRkY554YJxQDhqw2xXEPrX7GAO67GLarQ_44PoOFHweuw2CHxyrsOdxgxkJc-x1oQc-v50CV31V1hjeS0KouvgTKUoAwbIJDusiZLhh9WIkTdlf0x23Ln-dCVOzSsL-TmlOtylS0PtFLr8dcWUTAheCD1qY1GGplVfPns9AconRUYtkw7SErNThdeYwLcvRbHebWlWsp1qHKD1T1G3M3fVZnRMnq6SCvK4wVXEVo9D5VuajZgBgpkijijNoHH_mKB_AOiurnIKd1ZFiVCbkyPdr5QTIVdv4joAdn7Pt-XFjlWr2kywakp8AoSuzy6a7alI4o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_gifs/dog/2/0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_gifs",
+						"dog",
+						"2",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Gif por ID",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWFlYWQ1Y2NkOWZjMDY0MmE0OGRiMzJmNzEwYmQzNjI4ZGIwZjgyOGUzOTQ3NTljNTBkZWY1NWJjMDQ5ZDY4MDJhMzExYzhjZmExMWE4NjgiLCJpYXQiOjE3MDY4MTAyNjguMjg0ODIxLCJuYmYiOjE3MDY4MTAyNjguMjg0ODI3LCJleHAiOjE3MDY4MTIwNjguMjY4OTgzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.rTg3WU9QMOMlZq-mwNUJZNR3KdUCttCifodRbzGNC4lzDIv1eRHvUWr4PNSvKNP4HTXpzAet5fZ-WuGLYQOtG7P22dUo3Pto5re-4DpzCZxxyAOekHrhGnobYWOULHqgvKzqnQD42KRGM_rZHbCA43RZ0Johq6Jih-lroJtOnL5ggWj3vCYSFf3xVfkw-iJ_DkBdO-iMJFQ8DMOL85xiRi0eg1roFDUXc13cGMpMbvmvbxYfgIYv-SrPVSdsuV3H2JaM5lX1CsoH6e4uxGoJHPOqF4SvBecAuLKFnkmoBxELTlFMwAmXSIJEYdihfTYR_uVSF90Cx7ups1MTkRBszay-VkHvymdCuhAlxV_PRkY554YJxQDhqw2xXEPrX7GAO67GLarQ_44PoOFHweuw2CHxyrsOdxgxkJc-x1oQc-v50CV31V1hjeS0KouvgTKUoAwbIJDusiZLhh9WIkTdlf0x23Ln-dCVOzSsL-TmlOtylS0PtFLr8dcWUTAheCD1qY1GGplVfPns9AconRUYtkw7SErNThdeYwLcvRbHebWlWsp1qHKD1T1G3M3fVZnRMnq6SCvK4wVXEVo9D5VuajZgBgpkijijNoHH_mKB_AOiurnIKd1ZFiVCbkyPdr5QTIVdv4joAdn7Pt-XFjlWr2kywakp8AoSuzy6a7alI4o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/get_gif_id/3o7527pa7qs9kCG78A",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_gif_id",
+						"3o7527pa7qs9kCG78A"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar Gif favorito",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjFlMDAwYTE0MzFmODNjYzcwNjVjYjY5ZDYwOTU0MGQ1YjJjNTA4ODBmNDMyZmI1ODExNTdkNWYwMzU5ZDkxZDdkMWM4ZTNkYWEwMzRmYmIiLCJpYXQiOjE3MDY4MTM2ODUuNjUzNTM1LCJuYmYiOjE3MDY4MTM2ODUuNjUzNTQxLCJleHAiOjE3MDY4MTU0ODUuNjI5Mzc0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.J8wmsRu4r06Sw0iQWv9EpbqN2WiOXK7bFNl4AsbH8lCTjFd1MRHQOo295nUS1ZzAyaJw_RkJn7BmsQcnuY5puIYlW0r7z7p7coBMdW8XcFN_MQySceLaZdHFGL2AmDTHsqzJLPrH48OBQtj-nwnI8iUVVf0bu1Oxu3C2tAxlk6CG15IZu7YdcVaW72z08JmQt7Hl3jYMAMsh3lg9ENC_WZMrrc_gxiBOfvKslmnGMdygIsSXhYzV8WeQuhz_oJuZzplE2hFLuLRTIQmc_ptI5uHIOyQOpJTnkbh-zmX2CD7iURnXOnQz9xSSIxv3XgJj1SqpnwLvQnVfAFbdA-N49x39j3iLmVsIwB_nXriDHGqoosT2T1ZTDko9cgOzVwIk_69_L09hqHjTmjW42dD7JCa7wbOHtm7PqY1PlAGsi5QtpnttbYzK6ALB8kR9CNctsa_iLTG-c3w-V2pFlw3mCR5mg2uy5pDSGmecPgeRpYj-GxJTqq7EjOfJZe8NWdlhOxmqNpgyt21cqbZDwbqVbPL9F2zMX0Xu0NcTk3QdZ6iXIuaP1KkeM3ejUW-aK9PewQYIw7law7YcwU74MxTEHWTOoKGW2BUF0KqTmcv5mjytEPv_5Vn2sMImT52V5rTgYH0njEycX5XxoIqMEl7J0vuiNWNmKLcsvlRIoMLNcXk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/set_fav_gif/3o7527pa7qs9kCG78A/perrito/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"set_fav_gif",
+						"3o7527pa7qs9kCG78A",
+						"perrito",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

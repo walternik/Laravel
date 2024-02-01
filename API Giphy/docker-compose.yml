@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  api:
+    image: api
+    build: ./api
+    working_dir: /var/www/
+    volumes:
+      - ./api:/var/www/
+      - ./api/public/:/var/www/html/
+    ports:
+      - 8000:80
+    depends_on:
+      - db
+
+  db:
+    image: mariadb
+    env_file: .env
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - 3306:3306
