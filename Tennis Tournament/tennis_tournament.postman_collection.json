@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "d28ca8e4-a5b4-4d21-9a84-7eaa9a039e74",
+		"name": "tennis tournament",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32698115"
+	},
+	"item": [
+		{
+			"name": "play male tournament",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tournament_type\": \"male\",\r\n    \"players\": [\r\n        {\r\n            \"name\": \"Goran Svenson\",\r\n            \"skill\": 95,\r\n            \"strength\": 120,\r\n            \"speed\": 18\r\n        },\r\n        {\r\n            \"name\": \"Juan Carrasco\",\r\n            \"skill\": 93,\r\n            \"strength\": 121,\r\n            \"speed\": 25\r\n        },\r\n        {\r\n            \"name\": \"Nalo Ferreira\",\r\n            \"skill\": 92,\r\n            \"strength\": 130,\r\n            \"speed\": 23\r\n        },\r\n        {\r\n            \"name\": \"Benjamin Toren\",\r\n            \"skill\": 92,\r\n            \"strength\": 125,\r\n            \"speed\": 20\r\n        },\r\n        {\r\n            \"name\": \"John Duncan\",\r\n            \"skill\": 96,\r\n            \"strength\": 122,\r\n            \"speed\": 19\r\n        },\r\n        {\r\n            \"name\": \"Peter Radford\",\r\n            \"skill\": 94,\r\n            \"strength\": 126,\r\n            \"speed\": 17\r\n        },\r\n        {\r\n            \"name\": \"Victor Bhorn\",\r\n            \"skill\": 91,\r\n            \"strength\": 130,\r\n            \"speed\": 18\r\n        },\r\n        {\r\n            \"name\": \"Sebastian Petersen\",\r\n            \"skill\": 92,\r\n            \"strength\": 128,\r\n            \"speed\": 21\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/play",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"play"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "play female tournament",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tournament_type\": \"female\",\r\n    \"players\": [\r\n        {\r\n            \"name\": \"Erika Stevenson\",\r\n            \"skill\": 95,\r\n            \"reaction\": 85\r\n        },\r\n        {\r\n            \"name\": \"Gabriela Sabat\",\r\n            \"skill\": 96,\r\n            \"reaction\": 81\r\n        },\r\n        {\r\n            \"name\": \"Beka Rosalut\",\r\n            \"skill\": 93,\r\n            \"reaction\": 78\r\n        },\r\n        {\r\n            \"name\": \"Patricia Berenstein\",\r\n            \"skill\": 92,\r\n            \"reaction\": 83\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/play",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"play"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

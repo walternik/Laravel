@@ -1,0 +1,97 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Tennis Tournament API Simulator",
+        "description": "Shows the winner of the tennis tournament given a list of players",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000"
+        }
+    ],
+    "paths": {
+        "/api/play": {
+            "post": {
+                "tags": [
+                    "Play"
+                ],
+                "summary": "Show the winner of the tennis tournament",
+                "operationId": "5c63a19119545ef9a92868bae482488e",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "": {
+                                        "properties": {
+                                            "tournament_type": {
+                                                "type": "string"
+                                            },
+                                            "players": {
+                                                "type": "array|object"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "tournament_type": "male",
+                                    "players": [
+                                        {
+                                            "name": "Goran Svenson",
+                                            "skill": 95,
+                                            "strength": 120,
+                                            "speed": 18
+                                        },
+                                        {
+                                            "name": "Juan Carrasco",
+                                            "skill": 93,
+                                            "strength": 121,
+                                            "speed": 25
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The winner is Goran Svenson."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The number of players must be a power of 2."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
