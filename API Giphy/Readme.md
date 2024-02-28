@@ -1,7 +1,7 @@
 # API REST for Giphy
 
 ## Descripción
-Se integrarse la API de Giphy en un API REST Laravel que posee un conjunto de servicios como: Login, Buscar Gifs, Buscar Gif por id y Guardar Gif como favorito. Y adicionalmente un Register para crear nuevos usuarios.
+Se desea integrar la API de Giphy en un API REST Laravel que posee un conjunto de servicios como: Login, Buscar Gifs, Buscar Gif por id y Guardar Gif como favorito. Y adicionalmente un Register para crear nuevos usuarios.
 La API REST posee una autenticación OAuth2.0.
 
 ## Diagramas

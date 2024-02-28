@@ -1,37 +1,5 @@
 # Osana Salud
 
-El presente documento define un ejercicio práctico y las condiciones de evaluación para los postulantes a **_programador Back-end_** de **Osana Salud**.
-
-## Introducción
-
-Ésta guía contiene una serie de requerimientos de un Caso Práctico, que busca evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de Desarrollo de Tecnología de **_Osana Salud_**.
-
-## Modo de evaluación
-
-El desafío está pensado para resolverse en un máximo de **3 (tres) horas** por lo que recomendamos emplear como máximo ese tiempo y enviar todo lo que pueda para su evaluación.
-
-Una vez realizada la entrega, coordinaremos un llamado para analizar algunos aspectos sobre la metodología de trabajo, entre otros.
-
-Haremos especial hincapié en lo siguiente:
-
-  * Creatividad para resolver los requerimientos
-  * Metodología de trabajo
-  * Calidad del código (estructura y buenas prácticas)
-  * Conocimiento de "librerías" y el ecosistema.
-
-## Notas
-
-* Antes de comenzar a programar
-
-    - Realizar un `fork` de este repositorio.
-    - Crear un `branch` en su `fork` (a partir de la rama `develop` de este repositorio) utilizando su nombre de usuario.
-
-* Al finalizar
-
-    - Crear un `pull-request` a la rama `master` de este repositorio, desde el `branch` con su nombre de usuario.
-
-## Ejercicio práctico
-
 ### Contexto y objetivos
 
 Osana Salud tiene dos fuentes de datos de usuarios que debe centralizar en un único servicio para uso interno. Optamos por el desarrollo de una API ReST la cual debe abstraer, en esta etapa, las dos fuentes de datos siguientes:
